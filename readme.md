@@ -29,13 +29,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ```bash
 # Clone o repositório
-git clone 
+git clone https://github.com/Gabriek0/watch-me.git
 
 # Mude para o diretório do projeto
-cd 
+cd watch-me 
 
 # Instale as dependências
-yarn
+yarn 
 
 # Rode o projeto
 yarn dev
