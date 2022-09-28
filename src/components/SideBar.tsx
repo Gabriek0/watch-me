@@ -1,6 +1,6 @@
+import { memo } from "react";
 import { GenreResponseProps } from "../App";
 import { Button } from "./Button";
-
 
 interface sideBarProps {
   genres: GenreResponseProps[];
@@ -8,13 +8,19 @@ interface sideBarProps {
   selectedGenreId: number;
 }
 
-export function SideBar({ genres, handleClickButton, selectedGenreId }: sideBarProps) {
+export function SideBar({
+  genres,
+  handleClickButton,
+  selectedGenreId,
+}: sideBarProps) {
   return (
     <nav className="sidebar">
-      <span>Watch<p>Me</p></span>
+      <span>
+        Watch<p>Me</p>
+      </span>
 
       <div className="buttons-container">
-        {genres.map(genre => (
+        {genres.map((genre) => (
           <Button
             key={String(genre.id)}
             title={genre.title}
@@ -24,7 +30,6 @@ export function SideBar({ genres, handleClickButton, selectedGenreId }: sideBarP
           />
         ))}
       </div>
-
     </nav>
-  )
+  );
 }
